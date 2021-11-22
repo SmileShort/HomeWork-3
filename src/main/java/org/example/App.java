@@ -45,6 +45,7 @@ public class App
         driver.quit();
     }
 
+
     public static void sendMessage() throws InterruptedException {
 
         ChromeOptions chromeOptions = new ChromeOptions();
