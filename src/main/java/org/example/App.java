@@ -45,7 +45,6 @@ public class App
         driver.quit();
     }
 
-
     public static void sendMessage() throws InterruptedException {
 
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -64,10 +63,10 @@ public class App
 
         driver.findElement(By.id("l_msg")).click();
 
-        //driver.findElement(By.xpath("//li[@data-peer='533079423']")).click();  // Лир
-        driver.findElement(By.xpath("//li[@data-peer='664069291']")).click();
+        driver.findElement(By.xpath("//li[@data-peer='533079423']")).click();  // Лир
+        //driver.findElement(By.xpath("//li[@data-peer='664069291']")).click();  // бота забанили =(
         WebElement message = driver.findElement(By.cssSelector("#im_editable0"));
-        message.sendKeys("Как заработать деньги на Шри-Ланку?" + "\n");
+        message.sendKeys("Ромчик, пора делать уроки)))" + "\n");
         Thread.sleep(3000);
 
         driver.findElement(By.id("top_profile_link")).click();
